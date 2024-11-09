@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador Nível de Herói</title>
+</head>
+<body>
+    <main>
+        <h2>Classificador Nível de Herói</h2>
+        <form action="#">
+            <label for="heroname">Nome do Herói</label>
+            <input type="text" name="heroname" id="heroname" required><br><br>
+
+            <label for="experience">Experiência do Herói</label>
+            <input type="number" name="experience" id="experience" required><br><br>
+            <p>Resultado: <span id="levelresult"></span></p>                                    
+        </form>
+        
+        <button onclick="checketExperience() ">Verificar</button>
+        <button onclick="clearForm()">Limpar</button>
+        
+    </main>
+<script src="./src/js/script.js"></script>
+</body>
+</html>
