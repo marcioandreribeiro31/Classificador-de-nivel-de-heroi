@@ -9,18 +9,20 @@
 <body>
     <main>
         <div class="center">
-            <h1>Classificador Nível de Herói</h1>
-            <form class="form" action="#">
-                <label for="heroname">Nome do Herói</label>
-                <input type="text" name="heroname" id="heroname" required><br><br>
-                <label for="experience">Experiência do Herói</label>
-                <input type="number" name="experience" id="experience" required><br><br>
+            <div class="content">
+                <h1>Classificador Nível de Herói</h1>
+                <form class="form" action="#">
+                    <label for="heroname">Nome do Herói</label>
+                    <input type="text" name="heroname" id="heroname" required><br><br>
+                    <label for="experience">Experiência do Herói</label>
+                    <input type="number" name="experience" id="experience" required><br><br>
+                    
+                </form>
                 <p><span id="levelresult"></span></p>
-            </form>
-            
-            <div class="button">
-                <button onclick="checketExperience() ">Verificar</button>
-                <button onclick="clearForm()">Limpar</button>
+                <div class="button">
+                    <button onclick="checketExperience()" title="Click no botão para verificar o XP do herói." >Verificar</button>
+                    <button onclick="clearForm()" title="Click no botão para Limpar os campos e seleciona o campo nome do herói.">Limpar</button>
+                </div>
             </div>
         </div>
                

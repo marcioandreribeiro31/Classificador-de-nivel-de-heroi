@@ -2,39 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    background-image: url("../img/background.jpg");
+    background: linear-gradient(45deg, #DC60D4, #D7B149);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     width: 100vw;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 h1{
     font-size: 2.6rem;
+    margin-bottom: 30px;
 }
 
 .center input{
+    font-size: 1rem;
     border-radius: 5px;
     outline: none;
     margin-left: 15px;
-    padding: 5px;    
-    
+    padding: 5px;        
 }
 
-.form{
-    
-}
-.center{
+.center, .content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     gap:15px;
-    width: 700px;
-    margin: 0 auto;      
+    margin: 0 auto;          
+}
+
+.content{
+    background-color: rgba(211, 211, 211, 0.266);
+    width: 580px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.form .levelresult{
+    padding-top:10px;
+    font-weight: bold;
 }
 
 .button button{
@@ -44,9 +53,11 @@ h1{
     height: 50px;
     width: 100px;
     font-size: 1rem;
+    margin-top: 20px;
 }
 
 .button button:hover{
     background-color:#898484;
     color: #fff;
+    transition: 0.4;
 }
